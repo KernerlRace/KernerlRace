@@ -2,8 +2,8 @@
 
 <p>
 <b>Junior ML Engineer</b> · 2nd-year Computer Science student<br>
-I build models from the ground up — tokenizer, transformer, training loop — and pair them
-with solid statistics, so the answer is not only fluent but correct.
+I like building ML systems end to end — from synthetic data and baselines to models trained
+from scratch — and pairing them with solid statistics, so the answer is not only fluent but correct.
 </p>
 
 <p>
@@ -16,7 +16,7 @@ with solid statistics, so the answer is not only fluent but correct.
 
 | | |
 |---|---|
-| **[Causal Method Advisor](https://github.com/KernerlRace/causal-method-advisor)** | A small language model written and trained from scratch in PyTorch. Give it a CSV and a plain-English question — *"Did the campaign raise sales?"* — and it profiles the data, runs diagnostics and recommends a causal inference method (DiD, synthetic control, IV, RDD, …) with an explanation. |
+| **[Causal Method Advisor](https://github.com/KernerlRace/causal-method-advisor)** | Give it a CSV and a plain-English question — *"Did the campaign raise sales?"* — and it profiles the data, runs statistical diagnostics and recommends a causal inference method (DiD, synthetic control, IV, RDD, …) with an explanation. 22 method cards, 17 synthetic scenario generators with known ground truth, a classical-ML baseline at 83.6% end-to-end top-1. *In progress:* a small transformer trained from scratch in PyTorch. |
 | **[Python Mastery RPG](https://github.com/KernerlRace/python-mastery-rpg)** | Built in 48 hours at a University of Winchester hackathon. A gamified platform for learning Python: an in-browser code editor with auto-checked quests, XP and ranks, a leaderboard, a skills analytics dashboard and an LLM-powered mentor chatbot. *Streamlit · SQLite · Plotly · OpenAI API* |
 
 ### Stack
