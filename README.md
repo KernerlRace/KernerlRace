@@ -14,10 +14,18 @@ from scratch — and pairing them with solid statistics, so the answer is not on
 
 ### Projects
 
-| | |
-|---|---|
-| **[Causal Method Advisor](https://github.com/KernerlRace/causal-method-advisor)** | Give it a CSV and a plain-English question — *"Did the campaign raise sales?"* — and it profiles the data, runs statistical diagnostics and recommends a causal inference method (DiD, synthetic control, IV, RDD, …) with an explanation. 22 method cards, 17 synthetic scenario generators with known ground truth, a classical-ML baseline at 83.6% end-to-end top-1. *In progress:* a small transformer trained from scratch in PyTorch. |
-| **[Python Mastery RPG](https://github.com/KernerlRace/python-mastery-rpg)** | Built in 48 hours at a University of Winchester hackathon. A gamified platform for learning Python: an in-browser code editor with auto-checked quests, XP and ranks, a leaderboard, a skills analytics dashboard and an LLM-powered mentor chatbot. *Streamlit · SQLite · Plotly · OpenAI API* |
+**[Causal Method Advisor](https://github.com/KernerlRace/causal-method-advisor)** &nbsp;`in progress`<br>
+Give it a CSV and a plain-English question — *"Did the campaign raise sales?"* — and it profiles the data,
+runs statistical diagnostics and recommends a causal inference method (DiD, synthetic control, IV, RDD, …)
+with an explanation. 22 method cards, 17 synthetic scenario generators with known ground truth,
+a classical-ML baseline at 83.6% end-to-end top-1. Next: a small transformer trained from scratch.<br>
+<sub>Python · PyTorch · scikit-learn · statsmodels · pandas · Streamlit</sub>
+
+**[Python Mastery RPG](https://github.com/KernerlRace/python-mastery-rpg)** &nbsp;`hackathon · 48 h`<br>
+A gamified platform for learning Python, built at a University of Winchester hackathon:
+an in-browser code editor with auto-checked quests, XP and ranks, a leaderboard,
+a skills analytics dashboard and an LLM-powered mentor chatbot.<br>
+<sub>Python · Streamlit · SQLite · Plotly · OpenAI API</sub>
 
 ### Stack
 
