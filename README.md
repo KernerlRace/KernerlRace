@@ -8,6 +8,7 @@ from scratch — and shipping them as real software. Before ML: three years of U
 
 <p>
 <a href="mailto:mykyta.p.work@gmail.com"><img src="https://img.shields.io/badge/mykyta.p.work@gmail.com-111111?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+<a href="https://www.linkedin.com/in/mykytapaliienko"><img src="https://img.shields.io/badge/LinkedIn-111111?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 <img src="https://img.shields.io/badge/Remote--first_·_open_to_office-111111?style=flat-square" alt="Remote-first, open to office">
 <img src="https://img.shields.io/badge/Open_to_junior_%2F_intern_roles-111111?style=flat-square" alt="Open to junior / intern roles">
 </p>
