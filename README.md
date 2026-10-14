@@ -3,7 +3,7 @@
 <p>
 <b>Junior ML Engineer</b> · 2nd-year Computer Science student<br>
 I like building ML systems end to end — from OCR pipelines and synthetic data to models trained
-from scratch — and shipping them as software real people use every day.
+from scratch — and shipping them as real software. Before ML: three years of Unity games and Telegram bots.
 </p>
 
 <p>
@@ -14,7 +14,7 @@ from scratch — and shipping them as software real people use every day.
 
 ### Projects
 
-**VibeWorking** &nbsp;`commercial · sole developer · private repo`<br>
+**VibeWorking** &nbsp;`client project · sole developer · private repo`<br>
 A desktop app that reads and files accounting documents — invoices, acts, waybills — for a multi-branch business.
 OCR on ONNX Runtime with a Cyrillic model, field extraction (parties, dates, totals, VAT, IBAN and tax-ID checksums),
 supplier rules learned from accountants' corrections, and duplicate detection. Documents arrive through
@@ -36,14 +36,14 @@ stable/beta channels and rollback. ~32k lines of Python, 50 test suites, CI on G
 <sub>Screenshots use fictional demo data.</sub>
 </details>
 
-**[Causal Method Advisor](https://github.com/KernerlRace/causal-method-advisor)** &nbsp;`in progress`<br>
+**[Causal Method Advisor](https://github.com/KernerlRace/causal-method-advisor)** &nbsp;`in progress` &nbsp;[▶ live demo](https://causal-method-advisor.streamlit.app)<br>
 Give it a CSV and a plain-English question — *"Did the campaign raise sales?"* — and it profiles the data,
 runs statistical diagnostics and recommends a causal inference method (DiD, synthetic control, IV, RDD, …)
 with an explanation. 22 method cards, 17 synthetic scenario generators with known ground truth,
 a classical-ML baseline at 83.6% end-to-end top-1. Next: a small transformer trained from scratch.<br>
 <sub>Python · PyTorch · scikit-learn · statsmodels · pandas · Streamlit</sub>
 
-**[Python Mastery RPG](https://github.com/KernerlRace/python-mastery-rpg)** &nbsp;`hackathon · 48 h`<br>
+**[Python Mastery RPG](https://github.com/KernerlRace/python-mastery-rpg)** &nbsp;`hackathon · 48 h` &nbsp;[▶ live demo](https://python-mastery-rpg.streamlit.app)<br>
 A gamified platform for learning Python, built at a University of Winchester hackathon:
 an in-browser code editor with auto-checked quests, XP and ranks, a leaderboard,
 a skills analytics dashboard and an LLM-powered mentor chatbot.<br>
@@ -53,6 +53,8 @@ a skills analytics dashboard and an LLM-powered mentor chatbot.<br>
 
 <p>
 <img src="https://img.shields.io/badge/Python-111111?style=flat-square&logo=python&logoColor=white" alt="Python">
+<img src="https://img.shields.io/badge/C%23-111111?style=flat-square" alt="C#">
+<img src="https://img.shields.io/badge/Unity-111111?style=flat-square&logo=unity&logoColor=white" alt="Unity">
 <img src="https://img.shields.io/badge/PyTorch-111111?style=flat-square&logo=pytorch&logoColor=white" alt="PyTorch">
 <img src="https://img.shields.io/badge/CUDA-111111?style=flat-square&logo=nvidia&logoColor=white" alt="CUDA">
 <img src="https://img.shields.io/badge/NumPy-111111?style=flat-square&logo=numpy&logoColor=white" alt="NumPy">
