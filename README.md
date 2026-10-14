@@ -2,8 +2,8 @@
 
 <p>
 <b>Junior ML Engineer</b> · 2nd-year Computer Science student<br>
-I like building ML systems end to end — from synthetic data and baselines to models trained
-from scratch — and pairing them with solid statistics, so the answer is not only fluent but correct.
+I like building ML systems end to end — from OCR pipelines and synthetic data to models trained
+from scratch — and shipping them as software real people use every day.
 </p>
 
 <p>
@@ -13,6 +13,28 @@ from scratch — and pairing them with solid statistics, so the answer is not on
 </p>
 
 ### Projects
+
+**VibeWorking** &nbsp;`commercial · sole developer · private repo`<br>
+A desktop app that reads and files accounting documents — invoices, acts, waybills — for a multi-branch business.
+OCR on ONNX Runtime with a Cyrillic model, field extraction (parties, dates, totals, VAT, IBAN and tax-ID checksums),
+supplier rules learned from accountants' corrections, and duplicate detection. Documents arrive through
+a PyQt6 desktop UI or a Telegram bot. Ships as a Windows installer with signed (ed25519) auto-updates,
+stable/beta channels and rollback. ~32k lines of Python, 50 test suites, CI on GitHub Actions, now at v2.5.<br>
+<sub>Python · PyQt6 · RapidOCR · ONNX Runtime · SQLite · python-telegram-bot · PyInstaller · GitHub Actions</sub>
+
+<p>
+<img src="assets/vibeworking/queue-dark.png" width="49%" alt="VibeWorking: review queue, dark theme">
+<img src="assets/vibeworking/history-light.png" width="49%" alt="VibeWorking: document history, light theme">
+</p>
+
+<details>
+<summary>More screenshots</summary>
+<p>
+<img src="assets/vibeworking/accounting-dark.png" width="49%" alt="VibeWorking: accounting view, dark theme">
+<img src="assets/vibeworking/suppliers-light.png" width="49%" alt="VibeWorking: supplier rules, light theme">
+</p>
+<sub>Screenshots use fictional demo data.</sub>
+</details>
 
 **[Causal Method Advisor](https://github.com/KernerlRace/causal-method-advisor)** &nbsp;`in progress`<br>
 Give it a CSV and a plain-English question — *"Did the campaign raise sales?"* — and it profiles the data,
@@ -38,11 +60,16 @@ a skills analytics dashboard and an LLM-powered mentor chatbot.<br>
 <img src="https://img.shields.io/badge/scikit--learn-111111?style=flat-square&logo=scikitlearn&logoColor=white" alt="scikit-learn">
 <img src="https://img.shields.io/badge/SciPy-111111?style=flat-square&logo=scipy&logoColor=white" alt="SciPy">
 <img src="https://img.shields.io/badge/statsmodels-111111?style=flat-square" alt="statsmodels">
+<img src="https://img.shields.io/badge/ONNX_Runtime-111111?style=flat-square&logo=onnx&logoColor=white" alt="ONNX Runtime">
+<img src="https://img.shields.io/badge/PyQt6-111111?style=flat-square&logo=qt&logoColor=white" alt="PyQt6">
 <img src="https://img.shields.io/badge/Streamlit-111111?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
+<img src="https://img.shields.io/badge/Telegram_Bot_API-111111?style=flat-square&logo=telegram&logoColor=white" alt="Telegram Bot API">
 <img src="https://img.shields.io/badge/SQLite-111111?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
 <img src="https://img.shields.io/badge/Plotly-111111?style=flat-square&logo=plotly&logoColor=white" alt="Plotly">
 <img src="https://img.shields.io/badge/pytest-111111?style=flat-square&logo=pytest&logoColor=white" alt="pytest">
 <img src="https://img.shields.io/badge/Git-111111?style=flat-square&logo=git&logoColor=white" alt="Git">
+<img src="https://img.shields.io/badge/GitHub_Actions-111111?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
+<img src="https://img.shields.io/badge/Ruff-111111?style=flat-square&logo=ruff&logoColor=white" alt="Ruff">
 </p>
 
 ### Education
