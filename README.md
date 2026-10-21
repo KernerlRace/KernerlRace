@@ -80,12 +80,22 @@ a skills analytics dashboard and an LLM-powered mentor chatbot.<br>
 **University of Winchester** — BSc Computer Science, 2nd year<br>
 Relevant coursework: Machine Learning · Artificial Intelligence · Computer Architectures
 
-### Learning path 2026–27
+### Courses
 
-- [ ] [CS50x](https://cs50.harvard.edu/x/) — Introduction to Computer Science, Harvard
-- [ ] [CS50P](https://cs50.harvard.edu/python/) — Introduction to Programming with Python, Harvard
-- [ ] [CS50AI](https://cs50.harvard.edu/ai/) — Introduction to Artificial Intelligence with Python, Harvard
-- [ ] [Python Essentials 1 & 2](https://www.netacad.com/) — Cisco Networking Academy
-- [ ] [Introduction to Data Science](https://www.netacad.com/) — Cisco Networking Academy
-- [ ] [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) — Andrej Karpathy
-- [ ] [Hugging Face LLM Course](https://huggingface.co/learn/llm-course) — Hugging Face
+- [x] [CS50x](https://cs50.harvard.edu/x/) — Introduction to Computer Science, Harvard
+- [x] [CS50P](https://cs50.harvard.edu/python/) — Introduction to Programming with Python, Harvard
+- [x] [CS50AI](https://cs50.harvard.edu/ai/) — Introduction to Artificial Intelligence with Python, Harvard
+- [x] [Python Essentials 1 & 2](https://www.netacad.com/) — Cisco Networking Academy
+- [x] [Introduction to Data Science](https://www.netacad.com/) — Cisco Networking Academy
+- [x] [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) — Andrej Karpathy
+- [x] [Hugging Face LLM Course](https://huggingface.co/learn/llm-course) — Hugging Face
+
+### Next: LLM engineering, 2026–27
+
+- [ ] [CS336: Language Modeling from Scratch](https://cs336.stanford.edu/) — Stanford
+- [ ] [Generative AI with Large Language Models](https://www.coursera.org/learn/generative-ai-with-llms) — DeepLearning.AI & AWS
+- [ ] [Finetuning Large Language Models](https://www.deeplearning.ai/short-courses/finetuning-large-language-models/) — DeepLearning.AI
+- [ ] [Building and Evaluating Advanced RAG](https://www.deeplearning.ai/short-courses/building-evaluating-advanced-rag/) — DeepLearning.AI
+- [ ] [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp) — DataTalks.Club
+- [ ] [AI Agents Course](https://huggingface.co/learn/agents-course) — Hugging Face
+- [ ] [Anthropic courses](https://github.com/anthropics/courses) — prompt engineering and tool use, Anthropic
