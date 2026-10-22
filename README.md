@@ -37,12 +37,23 @@ stable/beta channels and rollback. ~32k lines of Python, 50 test suites, CI on G
 <sub>Screenshots use fictional demo data.</sub>
 </details>
 
-**[Causal Method Advisor](https://github.com/KernerlRace/causal-method-advisor)** &nbsp;`in progress` &nbsp;[▶ live demo](https://causal-method-advisor.streamlit.app)<br>
+**[Causal Method Advisor](https://github.com/KernerlRace/causal-method-advisor)** &nbsp;`ML from scratch` &nbsp;[▶ live demo](https://causal-method-advisor.streamlit.app)<br>
 Give it a CSV and a plain-English question — *"Did the campaign raise sales?"* — and it profiles the data,
 runs statistical diagnostics and recommends a causal inference method (DiD, synthetic control, IV, RDD, …)
-with an explanation. 22 method cards, 17 synthetic scenario generators with known ground truth,
-a classical-ML baseline at 83.6% end-to-end top-1. Next: a small transformer trained from scratch.<br>
+with an explanation. CausalGPT-mini — my own BPE tokenizer and a 34M-parameter GPT-style decoder, pretrained on
+Wikipedia and fine-tuned on the task — reads the question and explains the choice while code does the statistics.
+On 93 hand-written questions it picks the right method end to end 68% of the time against 58% for a classical-ML
+baseline, with calibrated confidence and honest refusals when the data cannot answer.
+22 method cards, 18 scenario generators with known ground truth. Next: questions written by other people.<br>
 <sub>Python · PyTorch · scikit-learn · statsmodels · pandas · Streamlit</sub>
+
+**[AI For Me](https://github.com/KernerlRace/Ai-For-Me)** &nbsp;`in progress · phase 1 of 10`<br>
+A voice assistant for my own Windows machine, built as separate ML subsystems on a shared event bus.
+Say «Амадеус» and a command in Russian or English: a wake-word CNN trained from scratch on my own recordings with
+hard-negative mining (90% of wake words found in a separate test session, no false accepts in 20 minutes of
+held-out audio), Whisper on the GPU, and intent recognition over 14 commands — four embeddings compared,
+92.8% on held-out phrases, 90.1% through speech. Next: switching between coding, gaming and meeting modes on its own.<br>
+<sub>Python · PyTorch · ONNX Runtime · faster-whisper · sentence-transformers · scikit-learn · SQLite · Windows API</sub>
 
 **[Python Mastery RPG](https://github.com/KernerlRace/python-mastery-rpg)** &nbsp;`hackathon · 48 h` &nbsp;[▶ live demo](https://python-mastery-rpg.streamlit.app)<br>
 A gamified platform for learning Python, built at a University of Winchester hackathon:
@@ -64,6 +75,7 @@ a skills analytics dashboard and an LLM-powered mentor chatbot.<br>
 <img src="https://img.shields.io/badge/SciPy-111111?style=flat-square&logo=scipy&logoColor=white" alt="SciPy">
 <img src="https://img.shields.io/badge/statsmodels-111111?style=flat-square" alt="statsmodels">
 <img src="https://img.shields.io/badge/ONNX_Runtime-111111?style=flat-square&logo=onnx&logoColor=white" alt="ONNX Runtime">
+<img src="https://img.shields.io/badge/Hugging_Face-111111?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face">
 <img src="https://img.shields.io/badge/PyQt6-111111?style=flat-square&logo=qt&logoColor=white" alt="PyQt6">
 <img src="https://img.shields.io/badge/Streamlit-111111?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
 <img src="https://img.shields.io/badge/Telegram_Bot_API-111111?style=flat-square&logo=telegram&logoColor=white" alt="Telegram Bot API">
