@@ -1,9 +1,10 @@
 <h2>Mykyta Paliienko</h2>
 
 <p>
-<b>Junior ML Engineer</b> · 2nd-year Computer Science student<br>
-I like building ML systems end to end — from OCR pipelines and synthetic data to models trained
-from scratch — and shipping them as real software. Before ML: three years of Unity games and Telegram bots.
+<b>Junior ML Engineer</b> · 2nd-year Computer Science student, University of Winchester<br>
+I build ML systems end to end — data, a baseline, a model, a held-out evaluation and a feedback loop — and ship them
+as real software: a voice assistant with its own wake-word model, a from-scratch language model for causal
+inference, an OCR app in production. Before ML: three years of Unity games and Telegram bots.
 </p>
 
 <p>
@@ -11,9 +12,21 @@ from scratch — and shipping them as real software. Before ML: three years of U
 <a href="https://www.linkedin.com/in/mykytapaliienko"><img src="https://img.shields.io/badge/LinkedIn-111111?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 <img src="https://img.shields.io/badge/Remote--first_·_open_to_office-111111?style=flat-square" alt="Remote-first, open to office">
 <img src="https://img.shields.io/badge/Open_to_junior_%2F_intern_roles-111111?style=flat-square" alt="Open to junior / intern roles">
+<img src="https://img.shields.io/badge/Seeking_ML_%2F_Applied_Science_placement_2027-111111?style=flat-square" alt="Seeking an ML / Applied Science placement, 2027">
 </p>
 
 ### Projects
+
+**[AI For Me](https://github.com/KernerlRace/Ai-For-Me)** &nbsp;`in progress · flagship`<br>
+A personal AI layer for my Windows machine, built as small ML systems on a shared event bus. A 60k-parameter
+wake-word CNN trained from scratch on my recordings, with hard-negative mining and synthetic whispers (92% on a
+separate test session, 0 false accepts in 22 min of held-out audio); Whisper on the GPU; a multilingual intent
+classifier (92.4% held out, 90.0% through speech vs 85.9% for TF-IDF); an active-learning loop that ranks commands
+by uncertainty for labelling and retrains behind a gate; a mode autopilot; a vision agent grounding commands on
+screenshots, with a dataset labelled for free by UI Automation.<br>
+<sub>Python · PyTorch · ONNX Runtime · faster-whisper · sentence-transformers · scikit-learn · FastAPI · React · TypeScript · SQLite · GitHub Actions</sub>
+
+<p><img src="https://raw.githubusercontent.com/KernerlRace/Ai-For-Me/main/docs/img/dashboard-commands.png" width="98%" alt="AI For Me: the Commands page — heard commands ranked by uncertainty, labels, accuracy by model version"></p>
 
 **VibeWorking** &nbsp;`client project · sole developer · private repo`<br>
 A desktop app that reads and files accounting documents — invoices, acts, waybills — for a multi-branch business.
@@ -43,17 +56,9 @@ runs statistical diagnostics and recommends a causal inference method (DiD, synt
 with an explanation. CausalGPT-mini — my own BPE tokenizer and a 34M-parameter GPT-style decoder, pretrained on
 Wikipedia and fine-tuned on the task — reads the question and explains the choice while code does the statistics.
 On 93 hand-written questions it picks the right method end to end 68% of the time against 58% for a classical-ML
-baseline, with calibrated confidence and honest refusals when the data cannot answer.
+baseline, with calibrated confidence (ECE 0.326 → 0.018) and honest refusals when the data cannot answer.
 22 method cards, 18 scenario generators with known ground truth. Next: questions written by other people.<br>
 <sub>Python · PyTorch · scikit-learn · statsmodels · pandas · Streamlit</sub>
-
-**[AI For Me](https://github.com/KernerlRace/Ai-For-Me)** &nbsp;`in progress · phase 1 of 10`<br>
-A voice assistant for my own Windows machine, built as separate ML subsystems on a shared event bus.
-Say «Амадеус» and a command in Russian or English: a wake-word CNN trained from scratch on my own recordings with
-hard-negative mining (90% of wake words found in a separate test session, no false accepts in 20 minutes of
-held-out audio), Whisper on the GPU, and intent recognition over 14 commands — four embeddings compared,
-92.8% on held-out phrases, 90.1% through speech. Next: switching between coding, gaming and meeting modes on its own.<br>
-<sub>Python · PyTorch · ONNX Runtime · faster-whisper · sentence-transformers · scikit-learn · SQLite · Windows API</sub>
 
 **[Python Mastery RPG](https://github.com/KernerlRace/python-mastery-rpg)** &nbsp;`hackathon · 48 h` &nbsp;[▶ live demo](https://python-mastery-rpg.streamlit.app)<br>
 A gamified platform for learning Python, built at a University of Winchester hackathon:
@@ -78,6 +83,10 @@ a skills analytics dashboard and an LLM-powered mentor chatbot.<br>
 <img src="https://img.shields.io/badge/Hugging_Face-111111?style=flat-square&logo=huggingface&logoColor=white" alt="Hugging Face">
 <img src="https://img.shields.io/badge/PyQt6-111111?style=flat-square&logo=qt&logoColor=white" alt="PyQt6">
 <img src="https://img.shields.io/badge/Streamlit-111111?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
+<img src="https://img.shields.io/badge/FastAPI-111111?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
+<img src="https://img.shields.io/badge/React-111111?style=flat-square&logo=react&logoColor=white" alt="React">
+<img src="https://img.shields.io/badge/TypeScript-111111?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+<img src="https://img.shields.io/badge/Whisper-111111?style=flat-square" alt="Whisper">
 <img src="https://img.shields.io/badge/Telegram_Bot_API-111111?style=flat-square&logo=telegram&logoColor=white" alt="Telegram Bot API">
 <img src="https://img.shields.io/badge/SQLite-111111?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
 <img src="https://img.shields.io/badge/Plotly-111111?style=flat-square&logo=plotly&logoColor=white" alt="Plotly">
@@ -103,6 +112,9 @@ Relevant coursework: Machine Learning · Artificial Intelligence · Computer Arc
 - [x] [Hugging Face LLM Course](https://huggingface.co/learn/llm-course) — Hugging Face
 
 ### Next: LLM engineering, 2026–27
+
+Weekly notes in [learning-log](https://github.com/KernerlRace/learning-log).
+
 
 - [ ] [CS336: Language Modeling from Scratch](https://cs336.stanford.edu/) — Stanford
 - [ ] [Generative AI with Large Language Models](https://www.coursera.org/learn/generative-ai-with-llms) — DeepLearning.AI & AWS
