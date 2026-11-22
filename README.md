@@ -23,10 +23,27 @@ wake-word CNN trained from scratch on my recordings, with hard-negative mining a
 separate test session, 0 false accepts in 22 min of held-out audio); Whisper on the GPU; a multilingual intent
 classifier (92.4% held out, 90.0% through speech vs 85.9% for TF-IDF); an active-learning loop that ranks commands
 by uncertainty for labelling and retrains behind a gate; a mode autopilot; a vision agent grounding commands on
-screenshots, with a dataset labelled for free by UI Automation.<br>
+screenshots, with a dataset labelled for free by UI Automation: Qwen2.5-VL 7B finds the right element for 62.7% of
+59 commands in my own words, where UI Automation finds 0%.<br>
 <sub>Python · PyTorch · ONNX Runtime · faster-whisper · sentence-transformers · scikit-learn · FastAPI · React · TypeScript · SQLite · GitHub Actions</sub>
 
 <p><img src="https://raw.githubusercontent.com/KernerlRace/Ai-For-Me/main/docs/img/dashboard-commands.png" width="98%" alt="AI For Me: the Commands page — heard commands ranked by uncertainty, labels, accuracy by model version"></p>
+
+**[RAG with Evals](https://github.com/KernerlRace/rag-evals-service)** &nbsp;`LLM engineering · MLOps`<br>
+Question answering over the Python docs, built around its evaluation. A 140-question golden set located in the
+source text; BM25 vs dense vs hybrid vs reranker at three chunk sizes with bootstrap CIs and paired tests (hybrid
+0.81 hit@5 vs 0.69 for BM25); an LLM judge checked against 60 hand labels with Cohen's κ, so answer accuracy is
+reported as an honest range (0.71–0.84). Shipped like a service: pgvector, Docker, a CI gate that fails the build when
+retrieval quality drops, a canary on Kubernetes that Prometheus rolled back on p95 latency, and Terraform on AWS
+Fargate, applied and destroyed.<br>
+<sub>Python · FastAPI · Postgres + pgvector · ONNX Runtime · Ollama · Docker · Kubernetes · Helm · Prometheus · Grafana · Terraform · AWS · GitHub Actions</sub>
+
+**[LLM Inference Bench](https://github.com/KernerlRace/llm-inference-bench)** &nbsp;`inference · cost`<br>
+How fast, how good and how cheap is a local LLM on an 8 GB GPU? Qwen2.5 1.5B–7B at three quantizations on
+Ollama and llama.cpp: latency, throughput, VRAM, power, perplexity and MMLU, turned into £ per million tokens next to
+AWS. Size beats precision (Q8 costs no measurable quality, Q4 about 5%); llama-server's `--kv-unified` doubles
+throughput at 2–4 streams, found in the server's own logs and confirmed with an A/B run.<br>
+<sub>Python · llama.cpp · Ollama · CUDA · pandas · matplotlib · GitHub Actions</sub>
 
 **VibeWorking** &nbsp;`client project · sole developer · private repo`<br>
 A desktop app that reads and files accounting documents — invoices, acts, waybills — for a multi-branch business.
@@ -91,6 +108,16 @@ a skills analytics dashboard and an LLM-powered mentor chatbot.<br>
 <img src="https://img.shields.io/badge/SQLite-111111?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite">
 <img src="https://img.shields.io/badge/Plotly-111111?style=flat-square&logo=plotly&logoColor=white" alt="Plotly">
 <img src="https://img.shields.io/badge/pytest-111111?style=flat-square&logo=pytest&logoColor=white" alt="pytest">
+<img src="https://img.shields.io/badge/PostgreSQL_+_pgvector-111111?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL + pgvector">
+<img src="https://img.shields.io/badge/Docker-111111?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+<img src="https://img.shields.io/badge/Kubernetes-111111?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes">
+<img src="https://img.shields.io/badge/Helm-111111?style=flat-square&logo=helm&logoColor=white" alt="Helm">
+<img src="https://img.shields.io/badge/Prometheus-111111?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus">
+<img src="https://img.shields.io/badge/Grafana-111111?style=flat-square&logo=grafana&logoColor=white" alt="Grafana">
+<img src="https://img.shields.io/badge/Terraform-111111?style=flat-square&logo=terraform&logoColor=white" alt="Terraform">
+<img src="https://img.shields.io/badge/AWS-111111?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS">
+<img src="https://img.shields.io/badge/llama.cpp-111111?style=flat-square" alt="llama.cpp">
+<img src="https://img.shields.io/badge/Ollama-111111?style=flat-square&logo=ollama&logoColor=white" alt="Ollama">
 <img src="https://img.shields.io/badge/Git-111111?style=flat-square&logo=git&logoColor=white" alt="Git">
 <img src="https://img.shields.io/badge/GitHub_Actions-111111?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
 <img src="https://img.shields.io/badge/Ruff-111111?style=flat-square&logo=ruff&logoColor=white" alt="Ruff">
