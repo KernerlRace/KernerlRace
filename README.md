@@ -43,7 +43,7 @@ How fast, how good and how cheap is a local LLM on an 8 GB GPU? Qwen2.5 1.5B–7
 Ollama and llama.cpp: latency, throughput, VRAM, power, perplexity and MMLU, turned into £ per million tokens next to
 AWS. Size beats precision (Q8 costs no measurable quality, Q4 about 5%); llama-server's `--kv-unified` doubles
 throughput at 2–4 streams, found in the server's own logs and confirmed with an A/B run.<br>
-<sub>Python · llama.cpp · Ollama · CUDA · pandas · matplotlib · GitHub Actions</sub>
+<sub>Python · llama.cpp · Ollama · CUDA · NVML · matplotlib · GitHub Actions</sub>
 
 **VibeWorking** &nbsp;`client project · sole developer · private repo`<br>
 A desktop app that reads and files accounting documents — invoices, acts, waybills — for a multi-branch business.
