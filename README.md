@@ -28,8 +28,8 @@ screenshots, with a dataset labelled for free by UI Automation: Qwen2.5-VL 7B fi
 <sub>Python · PyTorch · ONNX Runtime · faster-whisper · sentence-transformers · scikit-learn · FastAPI · React · TypeScript · SQLite · GitHub Actions</sub>
 
 <p><img src="https://raw.githubusercontent.com/KernerlRace/Ai-For-Me/main/docs/img/dashboard-commands.png" width="98%" alt="AI For Me: the Commands page — heard commands ranked by uncertainty, labels, accuracy by model version"></p>
-<sub>The dashboard is in Russian, the language I speak to the assistant in. It lists the commands it heard, the
-least certain first, with one-click labels; the chart tracks accuracy per model version.</sub>
+<sub>The dashboard lists every command the assistant heard, the least certain first, with one-click labels; the chart
+tracks accuracy per model version. It switches between English and Russian.</sub>
 
 **[RAG with Evals](https://github.com/KernerlRace/rag-evals-service)** &nbsp;`LLM engineering · MLOps`<br>
 Question answering over the Python docs, built around its evaluation. A 140-question golden set located in the
